@@ -24,3 +24,9 @@ let result = ninjas.push('ken'); //adds the variable to the lenght of the array
 result = ninjas.pop(); //removes the last variable
 
 console.log(result);
+
+let anotherNinja = ['potato', 'yam'];
+
+let anotherResult = ninjas.concat(anotherNinja);
+
+console.log(anotherResult);
