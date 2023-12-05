@@ -17,7 +17,7 @@ console.log(ninjas.length);
 
 // array methods
 
-// let result = ninjas.join('-');
+// let result = ninjas.join(',');
 // let result = ninjas.indexOf('chun-li');
 // let result = ninjas.concat(['ken', 'crystal']);
 let result = ninjas.push('ken'); //adds the variable to the lenght of the array
