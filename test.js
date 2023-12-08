@@ -15,49 +15,67 @@
 // console.log(calcVol);
 
 
-const calcVolume = (radius, height) => {
-  return 3.14 * radius**2 * height;
-};
+// const calcVolume = (radius, height) => {
+//   return 3.14 * radius**2 * height;
+// };
 
-const volume = calcVolume(5,2);
-console.log('the volume is: ', volume);
+// const volume = calcVolume(5,2);
+// console.log('the volume is: ', volume);
 
-const myFunc = (potato) => {
-  let value = 100;
-  potato(value);
-};
+// const myFunc = (potato) => {
+//   let value = 100;
+//   potato(value);
+// };
 
-myFunc(function(value){
-  console.log(value);
+// myFunc(function(value){
+//   console.log(value);
+// });
+
+
+// let people = ['mario', 'shaun', 'potato'];
+
+// people.forEach((person, index) => {
+//   console.log(index, person);
+// });
+
+
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
+
+// scoreOne = 100;
+
+// console.log(scoreOne);
+// console.log(scoreTwo);
+
+// const userOne = {
+//   usernmae: 'shaun',
+//   score: 100
+// }
+
+// const userTwo = userOne;
+
+// console.log(userOne);
+// console.log(userTwo);
+
+// userOne.usernmae = 'mario';
+
+// console.log(userOne);
+// console.log(userTwo);
+
+// const para = document.querySelector('body > p:nth-child(3)');
+// console.log(para);
+
+const paras = document.querySelectorAll('p');
+
+paras.forEach(para => {
+  para.innerText += ' new text';
+  console.log(para.innerText);
+
 });
 
+const people = ['mario', 'luigi', 'ryu'];
 
-let people = ['mario', 'shaun', 'potato'];
-
-people.forEach((person, index) => {
-  console.log(index, person);
-});
-
-
-let scoreOne = 50;
-let scoreTwo = scoreOne;
-
-scoreOne = 100;
-
-console.log(scoreOne);
-console.log(scoreTwo);
-
-const userOne = {
-  usernmae: 'shaun',
-  score: 100
-}
-
-const userTwo = userOne;
-
-console.log(userOne);
-console.log(userTwo);
-
-userOne.usernmae = 'mario';
-
-console.log(userOne);
-console.log(userTwo);
+people.forEach(person => {
+  person.innerHTML = (`${person}`);
+  console.log( person);
+})
