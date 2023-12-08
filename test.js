@@ -35,3 +35,27 @@ let people = ['mario', 'shaun', 'potato'];
 people.forEach((person, index) => {
   console.log(index, person);
 });
+
+
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+scoreOne = 100;
+
+console.log(scoreOne);
+console.log(scoreTwo);
+
+const userOne = {
+  usernmae: 'shaun',
+  score: 100
+}
+
+const userTwo = userOne;
+
+console.log(userOne);
+console.log(userTwo);
+
+userOne.usernmae = 'mario';
+
+console.log(userOne);
+console.log(userTwo);
