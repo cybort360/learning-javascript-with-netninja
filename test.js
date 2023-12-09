@@ -79,3 +79,26 @@ people.forEach(person => {
   person.innerHTML = (`${person}`);
   console.log( person);
 })
+
+// const button = document.querySelector('button');
+
+// button.addEventListener('click', () => {
+//   alert('Stop Touching me you perv!');
+// });
+
+const items = document.querySelectorAll('p');
+
+items.forEach(item => {
+  item.addEventListener('click', (e) => {
+  // e.target.style.textDecoration = 'line-through'
+  // e.target.classList.toggle('hidden');
+});
+});
+
+const body = document.querySelector('body');
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  body.innerHTML += '<li>Something new</li>'
+})
