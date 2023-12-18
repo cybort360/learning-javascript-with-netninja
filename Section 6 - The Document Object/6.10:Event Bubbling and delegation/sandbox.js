@@ -16,7 +16,7 @@ button.addEventListener('click', () => {
 // items.forEach(item => {
 //   item.addEventListener('click', e => {
 //     console.log('event in LI')
-//     e.stopPropagation();
+//     // e.stopPropagation();
 //     e.target.remove();
 //   });
 // });
