@@ -65,40 +65,64 @@
 // const para = document.querySelector('body > p:nth-child(3)');
 // console.log(para);
 
-const paras = document.querySelectorAll('p');
+// const paras = document.querySelectorAll('p');
 
-paras.forEach(para => {
-  para.innerText += ' new text';
-  console.log(para.innerText);
+// paras.forEach(para => {
+//   para.innerText += ' new text';
+//   console.log(para.innerText);
 
-});
+// });
 
-const people = ['mario', 'luigi', 'ryu'];
+// const people = ['mario', 'luigi', 'ryu'];
 
-people.forEach(person => {
-  person.innerHTML = (`${person}`);
-  console.log( person);
-})
+// people.forEach(person => {
+//   person.innerHTML = (`${person}`);
+//   console.log( person);
+// })
+
+// // const button = document.querySelector('button');
+
+// // button.addEventListener('click', () => {
+// //   alert('Stop Touching me you perv!');
+// // });
+
+// const items = document.querySelectorAll('p');
+
+// items.forEach(item => {
+//   item.addEventListener('click', (e) => {
+//   // e.target.style.textDecoration = 'line-through'
+//   // e.target.classList.toggle('hidden');
+// });
+// });
+
+// const body = document.querySelector('body');
 
 // const button = document.querySelector('button');
 
 // button.addEventListener('click', () => {
-//   alert('Stop Touching me you perv!');
+//   body.innerHTML += '<li>Something new</li>'
+// })
+
+const scores = [10, 20, 30, 15, 25, 50, 40, 51];
+
+// const filteredScore = scores.filter((score) => {
+//   if(score > 20){
+//     return true;
+//   }
+// })
+
+// console.log(filteredScore);
+
+// const firstHighScore = scores.find((score) => {
+//   if(score > 50){
+//     return true;
+//   }
 // });
 
-const items = document.querySelectorAll('p');
+// console.log(firstHighScore);
 
-items.forEach(item => {
-  item.addEventListener('click', (e) => {
-  // e.target.style.textDecoration = 'line-through'
-  // e.target.classList.toggle('hidden');
-});
+const mapScores = scores.map((score) => {
+  return score/2;
 });
 
-const body = document.querySelector('body');
-
-const button = document.querySelector('button');
-
-button.addEventListener('click', () => {
-  body.innerHTML += '<li>Something new</li>'
-})
+console.log(mapScores);
