@@ -1,10 +1,24 @@
+:root {
+  --font-family: "Quicksand", sans-serif;
+}
+
 body {
   background-color: #352f5b;
   color: #fff;
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-left: 30px;
 }
 
 header {
   max-width: 400px;
+  margin: 0 auto;
 }
 
 input[type="text"],
@@ -12,7 +26,31 @@ input[type="text"].focus {
   color: #fff;
   border: none;
   background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  width: 400px;
+  border-radius: 6px;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+main {
   max-width: 400px;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
 }
 
 .todos li {
@@ -26,4 +64,23 @@ input[type="text"].focus {
 
 i {
   color: #fff;
+}
+
+section {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-todo {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.filtered {
+  display: none !important;
 }
