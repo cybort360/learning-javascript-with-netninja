@@ -1,0 +1,17 @@
+body {
+  background: #c3e2c2;
+}
+
+.clock {
+  font-size: 4em;
+  text-align: center;
+  margin: 200px auto;
+  color: #cd8d7a;
+  font-family: "Exo 2", sans-serif;
+}
+
+.clock span {
+  background: #eaeccc;
+  padding: 20px;
+  border-radius: 6px;
+}
