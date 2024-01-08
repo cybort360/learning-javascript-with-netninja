@@ -11,6 +11,7 @@ const updateUI = (data) => {
   // destructure properties
 
   const { cityDets, weather } = data
+  console.log(data);
 
   //update details template
   details.innerHTML = `
@@ -18,7 +19,9 @@ const updateUI = (data) => {
     <div class="condition">${weather.WeatherText}</div>
     <div class="temp">
       <span>${weather.Temperature.Metric.Value}</span>
-      <span>&deg;C</span>
+      <span>&deg;C</span> /
+        <span>${weather.Temperature.Imperial.Value}</span>
+        <span>&deg;F</span>
   `
 
   //update day/nigth and icon images
