@@ -11,7 +11,6 @@ const updateUI = (data) => {
   // destructure properties
 
   const { cityDets, weather } = data
-  console.log(data);
 
   //update details template
   details.innerHTML = `
@@ -65,5 +64,13 @@ cityForm.addEventListener('submit', e => {
     updateUI(data);
   })
   .catch(err => console.log(err));
+
+  //set local storage
+localStorage.setItem('city', city);
 });
 
+if(localStorage.getItem('city')){
+  updateCity(localStorage.getItem('city'))
+  .then(data => updateUI(data))
+  .catch(err => console.log(err));
+}
