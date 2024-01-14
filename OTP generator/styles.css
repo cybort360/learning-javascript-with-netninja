@@ -1,0 +1,37 @@
+body {
+  background: #2b2e4a;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 200px;
+  left: 620px;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 0.2rem;
+  position: relative;
+  left: 90px;
+}
+
+div {
+  max-width: 550px;
+  padding: 20px 0;
+  text-align: center;
+  border: 2px solid #e84545;
+  border-radius: 8px;
+  font-size: 20px;
+  letter-spacing: 0.8rem;
+}
+
+button {
+  all: unset;
+  margin-top: 40px;
+  padding: 20px 40px;
+  background: #903749;
+  border-radius: 8px;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+  position: relative;
+  left: 140px;
+}
