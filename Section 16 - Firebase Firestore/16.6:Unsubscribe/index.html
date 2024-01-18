@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h2>Recipes</h2>
+      <ul></ul>
+      </ul>
+      <form>
+        <label for="recipe">Add a new recipe:</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="recipe" required />
+          <div class="input-group-append">
+            <input type="submit" value="add" class="btn btn-online secondary" />
+          </div>
+        </div>
+      </form>
+      <button>unsubscribe from changes</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+      let Config = {
+        apiKey: "AIzaSyDjqm-mrg6gPaVtg1Ajgon06UUAGRjAsLM",
+        authDomain: "tutorial-98c95.firebaseapp.com",
+        projectId: "tutorial-98c95",
+        storageBucket: "tutorial-98c95.appspot.com",
+        messagingSenderId: "650705639294",
+        appId: "1:650705639294:web:af97e629924e650d5d052f",
+        measurementId: "G-MD5MW6R4L0",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(Config);
+    </script>
+    <script src="sandbox.js"></script>
+  </body>
+</html>
