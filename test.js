@@ -121,77 +121,97 @@ const scores = [10, 20, 30, 15, 25, 50, 40, 51];
 
 // console.log(firstHighScore);
 
-const mapScores = scores.map((score) => {
-  return score/2;
-});
+// const mapScores = scores.map((score) => {
+//   return score/2;
+// });
 
-console.log(mapScores);
+// console.log(mapScores);
 
-const potato = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-  const data = await response.json();
+// const potato = async () => {
+//   const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+//   const data = await response.json();
 
- return data;
+//  return data;
+// }
+
+// potato().then((data) => {
+//   console.log(data);
+// })
+
+// class User {
+//   constructor(username){
+//     this.username = username;
+//   }
+// }
+
+// class Admin extends User{
+//   deleteUser(){
+//     console.log('admin can delete user');
+//     return this;
+//   }
+// }
+// const userOne = new User('mario');
+// const userTwo = new User('luigi');
+
+// console.log(userOne, userTwo);
+
+// const adminOne = new Admin('potato');
+
+// console.log(adminOne);
+
+// function Test(username){
+//   this.username = username;
+// }
+
+// Test.prototype.logout = function(){
+//   console.log(`${this.username} has logged out`);
+// };
+
+
+// function wadmin(username, title){
+//   Test.call(this, username);
+//   this.title = title;
+// }
+
+// wadmin.prototype = Object.create(Test.prototype);
+// wadmin.prototype.deleteUser = function(){
+//   //delete user
+// }
+
+// function superAdmin(username, title, position){
+//   wadmin.call(this, username, title);
+//   this.position = position;
+// }
+
+// superAdmin.prototype = Object.create(wadmin.prototype);
+// superAdmin.prototype.createUser = function(){
+//   //create user
+// }
+// const testOne = new Test('potato');
+// const wad = new wadmin('notwad', 'mr');
+// const superStuff = new superAdmin('shaun', 'mister', 'Ceo');
+
+// console.log(testOne, wad, superStuff);
+
+// testOne.logout();
+// wad.logout();
+
+
+const setNames = new Set(['potato', 'olamide', 'octane', 'potato']);
+
+console.log(setNames);
+
+const unique = [...setNames];
+
+console.log(unique);
+
+const ages = new Set();
+ages.add(20);
+ages.add(25);
+if(ages.has(30)){
+  alert('it is present');
+} else {
+  alert('it does not')
 }
 
-potato().then((data) => {
-  console.log(data);
-})
-
-class User {
-  constructor(username){
-    this.username = username;
-  }
-}
-
-class Admin extends User{
-  deleteUser(){
-    console.log('admin can delete user');
-    return this;
-  }
-}
-const userOne = new User('mario');
-const userTwo = new User('luigi');
-
-console.log(userOne, userTwo);
-
-const adminOne = new Admin('potato');
-
-console.log(adminOne);
-
-function Test(username){
-  this.username = username;
-}
-
-Test.prototype.logout = function(){
-  console.log(`${this.username} has logged out`);
-};
-
-
-function wadmin(username, title){
-  Test.call(this, username);
-  this.title = title;
-}
-
-wadmin.prototype = Object.create(Test.prototype);
-wadmin.prototype.deleteUser = function(){
-  //delete user
-}
-
-function superAdmin(username, title, position){
-  wadmin.call(this, username, title);
-  this.position = position;
-}
-
-superAdmin.prototype = Object.create(wadmin.prototype);
-superAdmin.prototype.createUser = function(){
-  //create user
-}
-const testOne = new Test('potato');
-const wad = new wadmin('notwad', 'mr');
-const superStuff = new superAdmin('shaun', 'mister', 'Ceo');
-
-console.log(testOne, wad, superStuff);
-
-testOne.logout();
-wad.logout();
+console.log(ages);
