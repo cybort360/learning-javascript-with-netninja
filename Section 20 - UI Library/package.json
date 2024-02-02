@@ -1,0 +1,24 @@
+{
+  "name": "section-19---babel-and-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "node_modules/.bin/babel src/index.js -w -o dist/assets/bundle.js",
+    "webpack": "node_modules/.bin/webpack -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^4.15.1"
+  }
+}
